@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "302dcc1e-133a-4176-970b-77cd343808d7",
+		"name": "Game-Database",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/players",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"Destroyer46\",\n    \"skill_level\":35\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}/players",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Player",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/players/6107cb4b33919c2d21608471",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"players",
+						"6107cb4b33919c2d21608471"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete multiple players",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/players?n=3",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"players"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
