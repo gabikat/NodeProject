@@ -1,5 +1,5 @@
 ## API Project (Backend only): Node.js, Express.js, MongoDB, Postman
-Work in progress. Limited error checking
+Created for educational purposes. Limited error checking
 
 ### Implemented:
 - POST (Add player) @ localhost:5000/api/players 
